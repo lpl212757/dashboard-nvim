@@ -108,8 +108,8 @@ local function project_list(config, callback)
 
   local function read_project(data)
     local res = {}
-    local dump = assert(loadstring(data))
-    local list = dump()
+    local project_nvim = require("project_nvim")
+    local list = project_nvim.get_recent_projects()
     if list then
       list = vim.list_slice(list, #list - config.project.limit)
     end
