@@ -358,7 +358,7 @@ end
 local function gen_footer(config)
   local footer = config.footer or {
     '',
-    ' Have you tried explaining it to the Rubber Duck 🦆',
+    ' Have you tried explaining it to the Rubber Duck 👑',
     -- ' 🚀 Sharp tools make good work.',
   }
 
