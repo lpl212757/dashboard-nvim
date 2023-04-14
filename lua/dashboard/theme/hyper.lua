@@ -358,8 +358,8 @@ end
 local function gen_footer(config)
   local footer = config.footer or {
     '',
-    ' Have you tried explaining it to the Rubber Duck 😎',
-    ' 🚀 Sharp tools make good work.',
+    ' Have you tried explaining it to the Rubber Duck 🦆',
+    -- ' 🚀 Sharp tools make good work.',
   }
 
   local first_line = api.nvim_buf_line_count(config.bufnr)
